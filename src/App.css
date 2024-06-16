@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.product-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-item h3 {
+  font-size: 1.2em;
+}
+
+.product-item p {
+  font-size: 1em;
+  color: #333;
+}
+

@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import { auth, db } from './firebaseConfig';
 import { onAuthStateChanged } from 'firebase/auth';
@@ -7,6 +6,7 @@ import axios from 'axios';
 import SignIn from './SignIn';
 import SwipeCards from './SwipeCards';
 import UserInteractions from './UserInteractions';
+import './App.css';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -55,17 +55,28 @@ const App = () => {
   };
 
   return (
-    <div>
-      {user ? (
-        <div>
-          <h1>Welcome, {user.displayName}</h1>
-          <button onClick={() => auth.signOut()}>Sign Out</button>
-          <SwipeCards onInteraction={handleInteraction} items={products} />
-          <UserInteractions />
+    <div className="App">
+      <header className="App-header">
+        <div className="banner">
+          <h1 className="logo">HomeSwiper </h1>
+          {user && (
+            <button className="sign-out-button" onClick={() => auth.signOut()}>
+              Sign Out
+            </button>
+          )}
         </div>
-      ) : (
-        <SignIn />
-      )}
+        <div className="content">
+          {user ? (
+            <div>
+              <h1>Welcome, {user.displayName}</h1>
+              <SwipeCards onInteraction={handleInteraction} items={products} />
+              <UserInteractions />
+            </div>
+          ) : (
+            <SignIn />
+          )}
+        </div>
+      </header>
     </div>
   );
 };

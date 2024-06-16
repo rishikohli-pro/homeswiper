@@ -1,60 +1,89 @@
+/* App.css */
+
+/* Global styles */
+body {
+  font-family: 'Outfit', sans-serif; /* Use Outfit font */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light gray background color */
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Banner styles */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #295a6d; /* Dark blue background color */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+  padding: 10px; /* Padding for the banner */
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; /* Center align content horizontally */
+  color: #ffffff; /* Text color */
+  font-size: 1.5rem; /* Adjust font size */
+  border-radius: 8px 8px 0 0; /* Rounded corners for top */
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  font-family: 'Outfit', sans-serif; /* Use Outfit font */
+  font-size: 2rem; /* Adjust logo font size */
+  margin: 0; /* Remove default margin */
+  padding-left: 20px; /* Padding for logo */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sign-out-button {
+  background-color: #ffffff; /* White background */
+  color: #295a6d; /* Dark blue text color */
+  border: none;
+  padding: 8px 16px; /* Padding for button */
+  cursor: pointer;
+  font-size: 1rem; /* Button font size */
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 20px; /* Margin for right side */
 }
 
+.sign-out-button:hover {
+  background-color: #ededed; /* Light gray background on hover */
+}
+
+/* Content styles */
+.content {
+  padding: 20px;
+  text-align: center; /* Center align content in the main section */
+}
+
+/* Product item styles */
 .product-item {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
+  background-color: #f9f5eb; /* Creme color background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  padding: 20px;
+  margin: 10px auto; /* Auto margin for centering */
+  text-align: center; /* Center align content */
+  max-width: 300px; /* Limit width of product items */
 }
 
 .product-item img {
   max-width: 100%;
   height: auto;
+  border-radius: 8px; /* Rounded corners for images */
 }
 
 .product-item h3 {
   font-size: 1.2em;
+  margin-bottom: 10px; /* Spacing below heading */
+  color: #333; /* Dark text color */
 }
 
 .product-item p {
   font-size: 1em;
-  color: #333;
+  color: #333; /* Dark text color */
 }
 
+/* Welcome text styles */
+h1 {
+  color: #ffffff; /* White text color */
+  text-align: center; /* Center align the welcome text */
+  margin-bottom: 20px; /* Add margin below the welcome text */
+}

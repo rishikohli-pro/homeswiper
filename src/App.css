@@ -5,7 +5,7 @@ body {
   font-family: 'Outfit', sans-serif; /* Use Outfit font */
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0; /* Light gray background color */
+  background-color: #3d4d65; /* Light gray background color */
 }
 
 .App {
@@ -13,17 +13,7 @@ body {
 }
 
 /* Banner styles */
-.App-header {
-  background-color: #295a6d; /* Dark blue background color */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
-  padding: 10px; /* Padding for the banner */
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center align content horizontally */
-  color: #ffffff; /* Text color */
-  font-size: 1.5rem; /* Adjust font size */
-  border-radius: 8px 8px 0 0; /* Rounded corners for top */
-}
+
 
 .logo {
   font-family: 'Outfit', sans-serif; /* Use Outfit font */
